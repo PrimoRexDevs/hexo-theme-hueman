@@ -1,9 +1,5 @@
 <% if (theme.comment.disqus) { %>
     <%- partial('comment/disqus', { script: true }) %>
-<% } else if (theme.comment.duoshuo) { %>
-    <%- partial('comment/duoshuo', { script: true }) %>
-<% } else if (theme.comment.youyan) { %>
-    <%- partial('comment/youyan', { script: true }) %>
 <% } else if (theme.comment.livere) { %>
     <%- partial('comment/livere', { script: true }) %>
 <% } else if (theme.comment.facebook) { %>
@@ -11,8 +7,6 @@
 <% } else if (typeof(theme.comment.isso) === 'string'
                || theme.comment.isso && theme.comment.isso.on) { %>
     <%- partial('comment/isso', { script: true }) %>
-<% } else if (theme.comment.changyan.on) { %>
-    <%- partial('comment/changyan', { script: true }) %>
 <% } else if (theme.comment.valine.on) { %>
     <%- partial('comment/valine', { script: true }) %>
 <% } else if (theme.comment.gitalk.on) { %>
